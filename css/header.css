@@ -1,0 +1,174 @@
+.top-section{
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(201, 198, 198);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+}
+.top-left{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.hamburger{
+    width: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.yt{
+    width: 90px;
+}
+.hamburger:hover , .yt:hover{
+    cursor: pointer;
+}
+.middle-section{
+    flex: 1;  
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 487px;
+    justify-content: center;
+}
+.search-img{
+    width: 25px;
+}
+.search-bar{
+    flex: 1;
+    height: 34px;
+    padding-left: 10px;
+    margin-right:-1px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+.search-bar::placeholder{
+    font-size: 16px; 
+    color: rgb(179, 178, 178);
+}
+.search-button{
+    width: 66px;
+    height: 38px;
+    vertical-align: center;
+    background-color: #f8f8f8;
+    border-radius: 2px;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-style: solid;
+}
+.voice-button{
+    width: 40px;
+    height: 38px;
+    margin-left: 6px;
+    border-radius: 40px;
+    border-style: none;
+    background-color: #f8f8f8;;
+}
+.voice-img{
+    width: 25px;
+}
+.top-right{
+    width: 188px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.add-vid-icon{
+    width: 24px;
+}
+.apps-icon{
+    width: 24px;    
+}
+.notification-icon{
+    width: 24px;    
+}
+.notification-count{
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    width: 16px;
+    height: 15px;
+    background-color: rgb(204, 0, 0);
+    border: 1px solid white;
+    border-radius: 14px;
+    font-size: 10px;
+    color: white;
+    font-family: roboto;
+    font-weight: 500; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile{
+    width: 32px;
+    border-radius: 16px;
+}
+.search-button, 
+.voice-button,
+.add-vid-icon,
+.apps-icon,
+.notification-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-button .tooltip, 
+.voice-button .tooltip,
+.add-vid-icon .tooltip,
+.apps-icon .tooltip,
+.notification-icon .tooltip{
+    position: absolute;
+    bottom: -50px;
+    font-size: 14px;
+    font-family: roboto;
+    color: white;
+    background-color: rgba(96, 96, 96);
+    padding: 8px;
+    opacity: 0;
+    border-radius: 2px;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.add-vid-icon:hover .tooltip,
+.apps-icon:hover .tooltip,
+.notification-icon:hover .tooltip{
+    opacity: 0.9;
+    transition: 0.15s;
+}
+.search-button:hover,
+.voice-button:hover,
+.add-vid-icon:hover,
+.apps-icon:hover,
+.notification-icon:hover,
+.profile:hover{
+    cursor: pointer;
+} 
+.search-button:hover,
+.voice-button:hover{
+    background-color: rgb(235, 235, 235);
+    opacity: 0.9;
+    transition: 0.15s;
+}
+.search-button:active{
+    border: 1px solid blue;
+}
